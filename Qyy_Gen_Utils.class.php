@@ -44,5 +44,10 @@ class Qyy_G_en_Utils
     // TODO: If `$posixRelativPath` start with a slash, throw an exception.
   }
   
+  public static function RemovePathSeparator ($string)
+  {
+    return preg_replace('%'.DIRECTORY_SEPARATOR.'%', '', $string);
+  }
+  
   
 }
